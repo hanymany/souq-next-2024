@@ -139,7 +139,7 @@ export const EditProduct = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const data = await axios
-        .post(`${baseUrl}/rest/rest.matgar/updateProductDetails`, {
+        .post(`${baseUrl}/rest/rest.product/updateProductDetails`, {
           ...product,
         })
         .then((res) => res.data);
